@@ -4,10 +4,12 @@ function Controller() {                       // class controller
     //private variables
     var city = "";
     var country = "";
+    
 
     //public methods
     this.setCity = function ( city ){
     	this.city = city;
+    	console.log("hello");
     }
     
     this.setCountry = function ( country ){
