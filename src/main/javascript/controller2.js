@@ -1,4 +1,4 @@
-
+/*jshint smarttabs:true */
 function Controller() {                       // class controller
 
     //private variables
