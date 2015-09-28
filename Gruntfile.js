@@ -2,15 +2,12 @@ module.exports = function(grunt) {
  
   grunt.initConfig({
     jshint: {
-    	all: ['Gruntfile.js', 'src/main/javascript/*.js','helloworld.js'],
-		options: {
-	      // more options here if you want to override JSHint defaults
-	  		globals: {
-	  			jQuery: true,
-	  			console: true,
-	  			module: true
-		    }
-		  }
+        files: ['Gruntfile.js', 'src/main/javascript/*.js', 'helloworld.js'],
+        options: {
+          globals: {
+            jQuery: true
+          }
+        }
     }
   });
  
