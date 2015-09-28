@@ -1,0 +1,89 @@
+#divCity{
+	position: relative;
+	width: 50%;
+
+}
+
+#labelCity {
+
+}
+
+#inputGetCity {
+	width: 50%;
+	/*this will fix the position of the inputCity with the inputCountry*/
+	position: relative;
+  	left: 25px;
+}
+
+#divCountry{
+	position: relative;
+	width: 50%;
+	/* so the divs will not be so close of each other */
+	top: 5px;	
+}
+
+#labelCountry{
+
+}
+
+#inputGetCountry {
+	width: 50%;
+}
+
+#inputGetAnswer{
+
+}
+
+#btnGetWeather{
+	position: relative;
+	/* so the button will not be so close of the divs */
+	top: 10px;
+}
+
+#divResultWeather{
+	position: relative;
+	top: 15px;
+}
+
+#inputGetAnswer{
+	position: relative;
+	/*Align with others inputs*/
+	left: 11px;
+	width: 75%;
+}
+
+#divHumidity{
+	position: relative;
+	top: 2px;
+}
+
+#inputGetHumidity{
+	position: relative;
+	left:     31px; /*alignment*/
+}
+
+#divWind{
+	position: relative;
+	top: 4px;
+}
+
+#divWeatherDesc{
+	position: relative;
+	top: 6px;
+}
+
+#inputGetWeatherDesc{
+	position: relative;
+  	left: 18px; /*alignment*/
+}
+
+
+#divWeatherState{
+	position: relative;
+	top: 8px;
+}
+
+#inputGetWeather{
+  	position: relative;
+  	left: 2px;/*alignment*/
+}

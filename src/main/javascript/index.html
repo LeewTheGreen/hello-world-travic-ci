@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<link rel="stylesheet" type="text/css" href="screenCss.css">
+		
+		<!-- angular JS -->
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+		
+		<!-- calls the other file -->
+		<script type="text/javascript" src="controller.js"></script>
+	</head> 
+
+	<body>
+
+		<!-- creating the view-->
+		<div id="content" style="width: 100%;height: 100%; position: absolute;">
+			
+			<div id="divWeather">
+				
+				<div id="divCity">
+					<font id="labelCity" color=maroon>Please inform a city:</font>     		
+					<input  id="inputGetCity" maxlength="50" placeholder="Inform a city"> </input>
+				</div>
+				
+				<div id="divCountry">
+					<font id="labelCountry"color=maroon>Please inform a country:</font>	
+					<input  id="inputGetCountry" maxlength="50" placeholder="Inform a country"> </input> 
+				</div>
+
+				<button id="btnGetWeather" onclick="callWeather( )" > Click here to call the weather </button>
+				
+				<div id="divResultWeather">
+
+					<div id= "divHumidity">
+						<font color=maroon>Humidity: </font>
+			 			<input  id="inputGetHumidity" disabled="disabled"> </input> 
+			 		</div>
+			 		
+			 		<div id= "divWind">
+			 			<font color=maroon>Speed of wind: </font>
+			 			<input  id="inputGetWind" disabled="disabled"> </input> 
+			 		</div>
+
+			 		<div id= "divWeatherDesc">	
+			 		<!-- https://www.utexas.edu/learn/html/spchar.html -->	
+			 			<font color=maroon>Description: </font>
+			 			<input  id="inputGetWeatherDesc" disabled="disabled"> </input> 
+			 		</div>
+
+			 		<div id="divWeatherState">
+						<font color=maroon>Weather State: </font>
+			 			<input  id="inputGetWeather" disabled="disabled"> </input> 			 		
+			 		</div>
+
+			 	</div>	
+			
+			</div>
+
+	 	</div>
+	  	<script>
+	  		
+	  		//encapsulate the method which will load our files
+	  		function loadFiles( ){
+		  		
+		  		var js = document.createElement("script");
+		  		
+		  		js.type = "text/javascript";
+				js.src = "controller.js";
+
+				document.body.appendChild(js);	  			
+	  		};
+
+	  		function callWeather( ){
+
+			  	var controller = new Controller();
+			  	//input	
+			  	var city= document.getElementById("inputGetCity").value;
+				var country= document.getElementById("inputGetCountry").value;
+				controller.getWeather(city, country);
+
+
+	  		};
+
+	  		//load the controller file
+	  		loadFiles();
+
+
+
+	  	</script>
+	</body>
+</html>

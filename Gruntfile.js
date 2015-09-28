@@ -2,7 +2,7 @@ module.exports = function(grunt) {
  
   grunt.initConfig({
     jshint: {
-      all: ['Gruntfile.js', 'helloworld.js']
+      all: ['Gruntfile.js', 'src/main/javascript/controller.js','helloworld.js']
     }
   });
  
