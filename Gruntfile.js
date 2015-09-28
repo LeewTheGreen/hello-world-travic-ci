@@ -5,7 +5,8 @@ module.exports = function(grunt) {
         files: ['Gruntfile.js', 'src/main/javascript/*.js', 'helloworld.js'],
         options: {
           globals: {
-            jQuery: true
+            jQuery: true,
+            "-W099": true, // allowed mixed tabs and spaces
           }
         }
     }
