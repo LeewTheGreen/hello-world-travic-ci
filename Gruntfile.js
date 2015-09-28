@@ -6,7 +6,7 @@ module.exports = function(grunt) {
         options: {
           globals: {
             jQuery: true,
-            "-W099": true, // allowed mixed tabs and spaces
+            "W099": true, // allowed mixed tabs and spaces
           }
         }
     }
